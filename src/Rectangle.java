@@ -29,7 +29,7 @@ class Rectangle extends Figure {
 	public void draw(Graphics g) {
 		g.setColor(Color.white);
 		g.fillRect(getX(), getY(), width, height);
-		g.setColor(Color.black);
+		g.setColor(Color.red);
 		g.drawRect(getX(), getY(), width, height);
 	}
 
