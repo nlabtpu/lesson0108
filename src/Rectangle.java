@@ -27,10 +27,12 @@ class Rectangle extends Figure {
 	}
 
 	public void draw(Graphics g) {
+		
 		g.setColor(Color.white);
 		g.fillRect(getX(), getY(), width, height);
 		g.setColor(Color.black);
 		g.drawRect(getX(), getY(), width, height);
+		g.drawString(super.toString(), getX() + getW() - 50, getY() - 15);
 	}
 
 }
