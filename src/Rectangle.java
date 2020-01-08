@@ -31,6 +31,7 @@ class Rectangle extends Figure {
 		g.fillRect(getX(), getY(), width, height);
 		g.setColor(Color.black);
 		g.drawRect(getX(), getY(), width, height);
+		g.drawString(super.toString(), getX(), getY());
 	}
 
 }
