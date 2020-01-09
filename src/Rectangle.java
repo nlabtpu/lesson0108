@@ -32,11 +32,14 @@ class Rectangle extends Figure {
 		g.setColor(Color.red);
 		g.drawRect(getX(), getY(), width, height);
 
+		g.setColor(Color.white);
+		g.fillOval(getX()+width/4, getY()+height/4, width/7, height/7);
+		g.fillOval(getX()+width/4*3, getY()+height/4, width/7, height/7);
 		g.setColor(Color.black);
-		g.fillOval(getX()+width/4, getY()+height/4, width/10, height/10);
-		g.fillOval(getX()+width/4*3, getY()+height/4, width/10, height/10);
+		g.fillOval(getX()+width/4+width/40, getY()+height/4+height/40, width/10, height/10);
+		g.fillOval(getX()+width/4*3+width/40, getY()+height/4+height/40, width/10, height/10);
 		g.setColor(Color.red);
-		g.fillOval(getX()+width/2, getY()+height/4*3, width/5, height/10);
+		g.fillArc(getX()+width/2, getY()+height/4*3, width/5, height/10,180,180);
 
 		g.drawString(super.toString(), getX() + getW() - 50, getY() - 15);
 		g.drawString(super.toString(), getX(), getY());
